@@ -21,7 +21,7 @@ export default function ProjectCard(props) {
 
   const openProjectPage = () => {
     console.log(props.url)
-    window.location.href = 'https://despel.dev/coding-speedruns/1%20counter/'
+    window.location.href = 'https://despel.github.io/coding-speedruns/1%20counter/'
   }
 
   return (
@@ -30,7 +30,7 @@ export default function ProjectCard(props) {
         <CardMedia
           className={classes.media}
           component="iframe"
-          src='https://despel.dev/coding-speedruns/1%20counter/'
+          src='https://despel.github.io/coding-speedruns/1%20counter/'
           title={props.title}></CardMedia>
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
