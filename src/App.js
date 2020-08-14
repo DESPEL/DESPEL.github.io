@@ -1,21 +1,65 @@
 import React from 'react';
 import logo from './logo.svg';
+
+import {
+  Container, CssBaseline, ThemeProvider
+} from '@material-ui/core'
+import {
+  createMuiTheme
+} from '@material-ui/core/styles'
+
 import './App.css';
 
-import ProjectCard from './components/projectCard'
+import ProjectContainer from './components/projectContainer'
+
+const projects = [
+  {
+    title: 'Counter',
+    description: '',
+    url: 'https://despel.github.io/coding-speedruns/1%20counter/',
+    source:'https://github.com/DESPEL/coding-speedruns/tree/master/1%20counter'
+  },
+  {
+    title: 'Random color changer',
+    description: '',
+    url: 'https://despel.github.io/coding-speedruns/2%20random_color',
+    source:'https://github.com/DESPEL/coding-speedruns/tree/master/2%20random_color'
+  },
+  {
+    title: 'Hardcoded reviews',
+    description: '',
+    url: 'https://despel.github.io/coding-speedruns/3%20hardcoded_reviews',
+    source:'https://github.com/DESPEL/coding-speedruns/tree/master/3%20hardcoded_reviews'
+  },
+  {
+    title: 'Navbar',
+    description: '',
+    url: 'https://despel.github.io/coding-speedruns/4%20navbar',
+    source:'https://github.com/DESPEL/coding-speedruns/tree/master/4%20navbar'
+  },
+  {
+    title: 'Sidebar',
+    description: '',
+    url: 'https://despel.github.io/coding-speedruns/5%20sidebar',
+    source:'https://github.com/DESPEL/coding-speedruns/tree/master/5%20sidebar'
+  },
+]
+
+const theme = createMuiTheme({
+  
+})
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <ProjectCard
-          thumbnail="https://i.pximg.net/img-original/img/2020/08/08/19/54/07/83531968_p0.jpg"
-          title="Test component"
-          description="adlfa sdfas dfa sdv asdv asdvasdv asdv asdvasd vasdva sdva sdv asdv asd vas dv asdv "
-          url="https://despel.dev/coding-speedruns/1%20counter/"
-        ></ProjectCard>
-      </header>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Container>
+          <ProjectContainer
+            projects={projects}
+          />
+        </Container>
+      </ThemeProvider>
     </div>
   );
 }
