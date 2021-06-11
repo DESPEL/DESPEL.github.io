@@ -1,0 +1,30 @@
+.spacing {
+    padding-top: var(--huge-space);
+    width: 100%;
+}
+
+.title {
+    font-size: var(--huge-size);
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    color: var(--secondary-color)
+}
+
+.subtitle {
+    font-size: var(--medium-size);
+    color: var(--highlight-color);
+    font-family: var(--primary-font);
+    font-style: italic;
+    font-weight: 300;
+}
+
+.heading {
+    font-size: var(--xbig-size);
+    font-family: var(--secondary-font);
+    color: var(--primary-color)
+}
+
+.paragraph {
+    padding: var(--tiny-space) 0px;
+    font-size: var(--normal-size);
+}

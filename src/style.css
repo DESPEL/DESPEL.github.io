@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mukta:wght@200;300;400;500;600;700;800&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+:root {
+    --background: #FCFBF5;
+    --primary-color: #0E8E93;
+    --secondary-color: #223B55;
+    --highlight-color: #37A58E;
+    --text-color: #707070;
+
+    --primary-font: 'Source Code Pro', sans-serif;
+    --secondary-font: 'Lato', sans-serif;
+    --text-font: 'Mukta', monospace;
+
+    --huge-size: 2.7em;
+    --xbig-size: 2em;
+    --big-size: 1.5em;
+    --medium-size: 1.4em;
+    --normal-size: 1.2em;
+
+    --tiny-space: 0.5em;
+    --small-space: 1em;
+    --medium-space: 2em;
+    --large-space: 4em;
+    --huge-space: 8em;
+
+    --animation-duration: 0.3s;
+
+    background-color: var(--background);
+    color: var(--text-color);
+    
+    font-family: var(--text-font);
+}
+
+.content > * {
+    width: 80vw;
+    margin: 0 auto;
+}

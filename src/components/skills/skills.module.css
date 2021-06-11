@@ -1,0 +1,57 @@
+.card {
+    margin: var(--medium-space) 0;
+
+    padding-bottom: var(--small-space);
+    padding-top: var(--small-space);
+    background-color: var(--highlight-color);
+
+    align-content: center;
+
+    color: var(--background);
+    font-size: var(--normal-size);
+    display: flex;
+}
+
+.left {
+    margin-left: -10vw;
+    padding-left: 10vw;
+    min-width: max-content;
+    clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%);
+    justify-content: flex-start;
+}
+
+.right {
+    margin-right: -10vw;
+    padding-left: 10vw;
+    min-width: max-content;
+    clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+    justify-content: flex-end;
+}
+
+.content {
+    width: 70%;
+}
+
+.skillRow {
+
+    display: flex;
+    width: 100%;
+}
+
+.skillRow > * {
+    flex: 1;
+}
+
+.skillType {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.skillName {
+    margin: auto;
+    font-size: var(--xbig-size);
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+}
